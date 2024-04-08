@@ -150,6 +150,10 @@ module.exports = function(symbol) {
             additionals.push('P11');
           else if (next === '13')
             additionals.push('M13');
+          else if (next === '4')
+            additionals.push('P4');
+          else if (next === '2')
+            additionals.push('M2');
           else {
             throw ParseError({
               title: 'Invalid token',
