@@ -20,7 +20,7 @@ test('Parsing chops', function(t) {
   t.deepEqual(daccord('M'), ['P1', 'M3', 'P5']);
   t.deepEqual(daccord('Ma'), ['P1', 'M3', 'P5']);
   t.deepEqual(daccord('Madd11'), ['P1', 'M3', 'P5', 'P11']);
-  t.deepEqual(daccord('madd11'), ['P1', 'm3', 'P5', 'P11'])
+  t.deepEqual(daccord('madd11'), ['P1', 'm3', 'P5', 'P11']);
   t.deepEqual(daccord('M#5'), ['P1', 'M3', 'A5']);
   t.deepEqual(daccord('maj7'), ['P1', 'M3', 'P5', 'M7']);
   t.deepEqual(daccord('+'), ['P1', 'M3', 'A5']);
