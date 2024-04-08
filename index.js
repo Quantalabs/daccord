@@ -35,7 +35,7 @@ var SYMBOLS = {
 
 module.exports = function(symbol) {
   var c, parsing = 'quality', additionals = [], name, chordLength = 2
-  var notes = ['P1', 'M3', 'P5', 'm7', 'M9', 'P11', 'M13'];
+  var notes = ['P1', 'M3', 'P5', 'M7', 'M9', 'P11', 'M13'];
   var explicitMajor = false;
 
   function setChord(name) {
