@@ -58,8 +58,9 @@ module.exports = function(symbol) {
       var sub2 = (i + 1) < len ? symbol.substr(i, 2).toLowerCase() : null;
       if (sub3 in SYMBOLS)
         name = sub3;
-      else if (sub2 in SYMBOLS)
-        name = sub2;
+      else if (sub2 in SYMBOLS && symbol.substr(i + 1, 3).toLowerCase() !== "add")
+        {name = sub2;
+        console.log(sub2);}
       else if (c in SYMBOLS)
         name = c;
       else
@@ -70,7 +71,6 @@ module.exports = function(symbol) {
 
       if (name === 'M' || name === 'ma' || name === 'maj')
         explicitMajor = true;
-
 
       i += name.length - 1;
       parsing = 'extension';
